@@ -22,6 +22,8 @@ echo "source ~/venv/bin/activate" >> ~/.bashrc
 echo "Installing Python dependencies..."
 source ~/venv/bin/activate && python3.9 -m pip install --upgrade pip wheel
 source ~/venv/bin/activate && pip install -r requirements.txt
+source ~/venv/bin/activate && pip install flask-talisman
+source ~/venv/bin/activate && pip install flask-cors
 
 echo "Starting the Postgres Docker container..."
 make db
